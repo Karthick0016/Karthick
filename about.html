@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <title>About Karthick</title>
+</head>
+<body>
+ <header class="header">
+ <div class="container">
+ <h1>About Karthick</h1>
+ </div>
+ </header>
+
+
+ <nav class="nav">
+ <div class="container">
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="about.html" class="active">About Me</a></li>
+ <li><a href="skills.html">Skills</a></li>
+ <li><a href="projects.html">Projects</a></li>
+ <li><a href="education.html">Education</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ </ul>
+ </div>
+ </nav>
+
+
+ <section class="content">
+ <div class="container">
+ <h2>Personal Details</h2>
+ <div class="personal-details-container">
+ <img src="path-to-your-image.jpg" alt="Karthick K" class="personal-image">
+ <div class="details">
+ <p><i class="fas fa-user"></i> <strong>Name:</strong> Karthick K</p>
+ <p><i class="fas fa-birthday-cake"></i> <strong>Date of Birth:</strong> March 3, 2005</p>
+ <p><i class="fas fa-venus-mars"></i> <strong>Gender:</strong> Male</p>
+ <p>I am a dedicated and enthusiastic IT student with a strong interest in software development and cybersecurity.
+ My goal is to contribute to innovative projects that make a positive impact on society.</p>
+ <p>Outside of academics, I enjoy participating in hackathons, contributing to open-source projects, and staying
+ up-to-date with the latest trends in the tech industry. I am also an avid reader and enjoy playing chess in my
+ free time.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+
+ <section class="skills-overview">
+ <div class="container">
+ <h2>Skills Overview</h2>
+ <div class="skills-chart">
+ <!-- Placeholder for a skills chart using Chart.js or similar -->
+ <canvas id="skillsChart"></canvas>
+ </div>
+ </div>
+ </section>
+
+
+ <footer class="footer">
+ <div class="container">
+ <p>&copy; 2025 Karthick K. All rights reserved.</p>
+ <div class="social-icons">
+ <a href="#"><i class="fab fa-linkedin"></i></a>
+ <a href="#"><i class="fab fa-github"></i></a>
+ <a href="#"><i class="fab fa-twitter"></i></a>
+ </div>
+ </div>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script>
+ const ctx = document.getElementById('skillsChart').getContext('2d');
+ const myChart = new Chart(ctx, {
+ type: 'bar',
+ data: {
+ labels: ['Java', 'Python', 'HTML/CSS', 'SQL'],
+ datasets: [{
+ label: 'Skill Level',
+ data: [85, 75, 95, 70],
+ backgroundColor: [
+ 'rgba(52, 152, 219, 0.6)',
+ 'rgba(41, 128, 185, 0.6)',
+ 'rgba(46, 204, 113, 0.6)',
+ 'rgba(155, 89, 182, 0.6)'
+ ],
+ borderColor: [
+ 'rgba(52, 152, 219, 1)',
+ 'rgba(41, 128, 185, 1)',
+ 'rgba(46, 204, 113, 1)',
+ 'rgba(155, 89, 182, 1)'
+ ],
+ borderWidth: 1
+ }]
+ },
+ options: {
+ scales: {
+ y: {
+ beginAtZero: true,
+ max: 100
+ }
+ }
+ });
+ </script>
+</body>
+</html>
