@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Skills</title>
+ </head>
+ <body>
+  <header class="header">
+  <div class="container">
+  <h1>Skills</h1>
+  </div>
+  </header>
+ 
+
+  <nav class="nav">
+  <div class="container">
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Me</a></li>
+  <li><a href="skills.html">Skills</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="education.html">Education</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  </nav>
+ 
+
+  <section class="content">
+  <div class="container">
+  <h2>Technical Skills</h2>
+  <div class="skill-bar">
+  <p>Java</p>
+  <div class="bar">
+  <span style="width: 85%;"></span>
+  </div>
+  </div>
+  <div class="skill-bar">
+  <p>Python</p>
+  <div class="bar">
+  <span style="width: 75%;"></span>
+  </div>
+  </div>
+  <div class="skill-bar">
+  <p>HTML/CSS</p>
+  <div class="bar">
+  <span style="width: 95%;"></span>
+  </div>
+  </div>
+  <div class="skill-bar">
+  <p>SQL</p>
+  <div class="bar">
+  <span style="width: 70%;"></span>
+  </div>
+  </div>
+ 
+
+  <h2>Soft Skills</h2>
+  <ul>
+  <li>Teamwork: Excellent collaboration skills demonstrated in team projects.</li>
+  <li>Problem-solving: Proven ability to analyze and solve complex technical issues.</li>
+  <li>Communication: Effective communication skills through presentations and documentation.</li>
+  </ul>
+  <canvas id="skillsChart" width="400" height="200"></canvas>
+  </div>
+  </section>
+ 
+
+  <footer class="footer">
+  <div class="container">
+  <p>&copy; 2025 Karthick K. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="#"><i class="fab fa-linkedin"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+  </div>
+  </footer>
+  <script>
+  const ctx = document.getElementById('skillsChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+  labels: ['Java', 'Python', 'HTML/CSS', 'SQL'],
+  datasets: [{
+  label: 'Skill Level',
+  data: [85, 75, 95, 70],
+  backgroundColor: [
+  'rgba(52, 152, 219, 0.6)',
+  'rgba(41, 128, 185, 0.6)',
+  'rgba(46, 204, 113, 0.6)',
+  'rgba(155, 89, 182, 0.6)'
+  ],
+  borderColor: [
+  'rgba(52, 152, 219, 1)',
+  'rgba(41, 128, 185, 1)',
+  'rgba(46, 204, 113, 1)',
+  'rgba(155, 89, 182, 1)'
+  ],
+  borderWidth: 1
+  }]
+  },
+  options: {
+  scales: {
+  y: {
+  beginAtZero: true,
+  max: 100
+  }
+  }
+  }
+  });
+  </script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+ </body>
+ </html>
